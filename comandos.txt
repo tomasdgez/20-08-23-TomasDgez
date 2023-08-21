@@ -1,0 +1,290 @@
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez
+$ pwd
+/c/Users/tomas/Desktop/20-08-23-TomasDgez
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez
+$ git init
+Initialized empty Git repository in C:/Users/tomas/Desktop/20-08-23-TomasDgez/.
+git/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ touch README.md
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add README.md
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git commit -m "primer com"
+[master (root-commit) 424fc3d] primer com
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git remote add origin https://github.com/tomasdgez/20-08-23-TomasDgez.git
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git remote -v
+origin  https://github.com/tomasdgez/20-08-23-TomasDgez.git (fetch)
+origin  https://github.com/tomasdgez/20-08-23-TomasDgez.git (push)
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ touch main.js
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ touch index.html
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add main.js
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add index.html
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git commit -m "primer commit2"
+[master 1d6d0f8] primer commit2
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 439 bytes | 439.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tomasdgez/20-08-23-TomasDgez.git
+ * [new branch]      master -> master
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git branch  feature
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mkdir hardware
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mkdir software
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mkdir seguridadinformatica
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ cd hardware/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/hardware (master)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/hardware (master)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ cd software/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/software (master)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/software (master)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ cd seguridadinformatica/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/seguridadinformatica (master)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/seguridadinformatica (master)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hardware/
+        seguridadinformatica/
+        software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add .
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git commit -m "agregar carpetas"
+[master fd59433] agregar carpetas
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 seguridadinformatica/resumen.txt
+ create mode 100644 software/resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 379 bytes | 379.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tomasdgez/20-08-23-TomasDgez.git
+   1d6d0f8..fd59433  master -> master
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ mkdir hardware
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ mkdir software
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ mkdir seguridadinformatica
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ cd hardware/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/hardware (feature)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/hardware (feature)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ cd software/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/software (feature)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/software (feature)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ cd seguridadinformatica/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/seguridadinformatica (feature)
+$ touch resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez/seguridadinformatica (feature)
+$ cd ..
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hardware/
+        seguridadinformatica/
+        software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git add .
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git commit -m "agregando rama"
+[feature 5a3aff9] agregando rama
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 seguridadinformatica/resumen.txt
+ create mode 100644 software/resumen.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git push origin master
+Everything up-to-date
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git branch main
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (feature)
+$ git checkout master
+Switched to branch 'master'
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ ls
+README.md  hardware/  index.html  main.js  seguridadinformatica/  software/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mv main.js ~/Desktop/20-08-23-TomasDgez/resumenhardware.txt
+mv: cannot move 'main.js' to '/c/Users/tomas/Desktop/20-08-23-TomasDgez/resumenhardware.txt': No such file or directory
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ ls
+README.md  hardware/  index.html  main.js  seguridadinformatica/  software/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mv main.js resumenhardware.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ ls
+README.md  index.html           seguridadinformatica/
+hardware/  resumenhardware.txt  software/
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ mv index.html resumensoftware.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    index.html
+        deleted:    main.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        resumenhardware.txt
+        resumensoftware.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git add .
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git commit -m "cambio de nombres"
+[master 16a0e34] cambio de nombres
+ 4 files changed, 6 insertions(+)
+ delete mode 100644 index.html
+ delete mode 100644 main.js
+ create mode 100644 resumenhardware.txt
+ create mode 100644 resumensoftware.txt
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 430 bytes | 430.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tomasdgez/20-08-23-TomasDgez.git
+   fd59433..16a0e34  master -> master
+
+Tomas_@TomPC MINGW64 ~/Desktop/20-08-23-TomasDgez (master)
+$ touch comandos.txt
